@@ -28,12 +28,14 @@ customer_one_itemization =""
 #customer purchased a loveseat
 customer_one_total +=lovely_loveseat_price
 
-#Items customer purchased
+#updat Items customer purchased
 customer_one_itemization+=lovely_loveseat_description
 
 #purchsed a lamp
 customer_one_total +=luxurious_lamp_price
-customer_one_itemization+=lovely_loveseat_description
+
+#update to list puchased
+customer_one_itemization+=luxurious_lamp_description
 
 #calculate sales tax
 customer_one_tax = customer_one_total * sales_tax
@@ -41,6 +43,9 @@ customer_one_tax = customer_one_total * sales_tax
 #Total expense
 customer_one_total +=customer_one_tax
 
+#print Receipt
 print("Customer One Items:")
 print(customer_one_itemization)
+print("Customer One Total:")
+print(customer_one_total)
 
